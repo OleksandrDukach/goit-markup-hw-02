@@ -1,4 +1,14 @@
 body {
-  background-color: #fff;
-  color: blue;
+  background-color: #e5e5e5;
+  color: #212121;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.form-nav,
+.form-footer {
+  background-color: #2f303a;
 }

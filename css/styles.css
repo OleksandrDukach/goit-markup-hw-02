@@ -2,7 +2,7 @@
 body {
   background-color: #e5e5e5;
   color: #212121;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -29,15 +29,18 @@ a:focus {
   cursor: pointer;
 }
 
-/* Цвет фона футера */
+/* Цвета футера */
 
 .form-footer {
   background-color: #2f303a;
-  color: #212121;
 }
 
 /* Изменение веса шрифта от базы */
 
 .desk {
   font-weight: 400;
+}
+
+.link {
+  color: #ffffff;
 }

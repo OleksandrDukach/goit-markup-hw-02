@@ -1,3 +1,4 @@
+/* Основные параметры */
 body {
   background-color: #e5e5e5;
   color: #212121;
@@ -5,10 +6,38 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 1.5;
 }
 
-.form-nav,
+/* Цвет текста навигации */
+
+a {
+  color: #212121;
+}
+
+/* Смена цвета при навигации, фокусе */
+
+a:hover,
+a:focus {
+  color: #2196f3;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Цвет фона футера */
+
 .form-footer {
   background-color: #2f303a;
+  color: #212121;
+}
+
+/* Изменение веса шрифта от базы */
+
+.desk {
+  font-weight: 400;
 }

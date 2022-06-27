@@ -126,3 +126,8 @@ body {
 .footer .list {
   color: var(--address-color);
 }
+
+.footer .list:hover,
+.footer .list:focus {
+  color: var(--accent-color);
+}

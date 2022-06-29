@@ -26,14 +26,21 @@ body {
   background-color: var(--primery-bgr-color);
   color: var(--primery-text-color);
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+  list-style: none;
 }
 
 /* Стилизация лого */
 .logo {
   color: var(--logo-color-sec);
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -43,14 +50,14 @@ body {
   color: var(--head-button-bgr-color);
 }
 
-/* Стиль меню управления */
-.page-header {
+/* Стиль меню управления - ЗАМЕЧАНИЯ*/
+/* .page-header {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
+} */
 
 /* Hover nav list */
 .nav-link:hover,
@@ -65,6 +72,7 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .head-section > .title {
@@ -77,8 +85,11 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  display: flex;
   align-items: center;
   text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .section .button {
@@ -98,15 +109,32 @@ body {
 .section .title {
   color: var(--secondary-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 18px;
+  line-height: 2;
 }
 
-.section .desc {
+.section-rarity .desc {
   color: var(--secondary-text-color);
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.desc {
+  color: var(--secondary-text-color);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.team {
+  background-color: var(--secondary-bgr-color);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .footer {
@@ -116,7 +144,7 @@ body {
   line-height: 1.71;
 }
 
-.link {
+.footer > .logo.link {
   color: var(--head-text-color);
   font-weight: 700;
   font-size: 26px;
@@ -125,6 +153,10 @@ body {
 
 .footer .list {
   color: var(--address-color);
+}
+
+.footer .address {
+  color: var(--head-text-color);
 }
 
 .footer .list:hover,

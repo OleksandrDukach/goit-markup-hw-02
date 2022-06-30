@@ -26,9 +26,7 @@ body {
   background-color: var(--primery-bgr-color);
   color: var(--primery-text-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -50,33 +48,44 @@ body {
   color: var(--head-button-bgr-color);
 }
 
-/* Стиль меню управления - ЗАМЕЧАНИЯ*/
-/* .page-header {
+.nav-link {
   color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-} */
+}
+
+.head-link {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 
 /* Hover nav list */
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
 }
+
+.head-link:hover,
+.head-link:focus {
+  color: var(--accent-color);
+}
+
 /* Head style */
 .head-section {
   background-color: var(--footer-bgr-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .head-section > .title {
   color: var(--head-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .head-section > .head-button {
@@ -92,10 +101,29 @@ body {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section .button {
+  background-color: var(--secondary-bgr-color);
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 /* Button hover, activ */
@@ -103,7 +131,15 @@ body {
 .button:focus {
   background-color: var(--accent-color);
   color: var(--primery-bgr-color);
-  cursor: pointer;
+}
+
+.section .caption {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .section .title {
@@ -111,6 +147,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .section-rarity .desc {
@@ -130,6 +167,12 @@ body {
 
 .team {
   background-color: var(--secondary-bgr-color);
+}
+
+.job-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .text {
@@ -153,10 +196,12 @@ body {
 
 .footer .list {
   color: var(--address-color);
+  font-style: normal;
 }
 
 .footer .address {
   color: var(--head-text-color);
+  font-style: normal;
 }
 
 .footer .list:hover,
